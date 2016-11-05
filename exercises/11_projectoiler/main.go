@@ -1,5 +1,6 @@
 package main
 
+// gersakbogdan committed on Dec 27, 2014 - taken from this source
 import (
 	"fmt"
 	"time"
