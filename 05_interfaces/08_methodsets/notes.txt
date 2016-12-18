@@ -1,0 +1,23 @@
+ method sets - the set of methods which are attached to a type OR which a a type has
+
+ receivers  - what defines the method
+   what type we can have
+     value receiver
+       pointer value AND/OR value type can use that receiver
+       Can attach a method to a value type OR pointer type  - by using a value receiver
+     pointer receiver
+
+   which types can use receivers
+
+
+The stack
+  A stack of functions
+  A layer of functions i.e. Func A call Func B which Calls Func C
+  As C executes - comes off the stack
+  As B executes - comes off the stack
+  Dynamically growing stack
+
+The heap
+  When a variable goes off the stack it escapes to the heap
+
+Conclusion: When you have a value it may not have an address - cannot take the address of a variable if it is never on the stack or the heap

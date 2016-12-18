@@ -1,0 +1,19 @@
+JSON - definition
+  Human readable text to transfer data objects - consisting of attribute value pairs - replaced XML
+JSON - in action
+  http://www.jsoneditoronline.org/
+Encoding
+  Un/Marshall
+    Does it to a String
+    func marshal - takes an interface returns a slice of bytes OR error
+    func unmarhal - takes a slice of bytes an interface and returns an error
+      interface must be an address
+    Used internally inside the program
+  Encode(OUT)/Decode(IN)
+    Comes in/out from a Stream
+     Stream - I want to write this back as a response
+     Used externally from the program
+     Encode
+      Writer
+     Decode
+      Reader 

@@ -18,12 +18,13 @@ func main() {
 	mygreetting["Mathieu"] = "Bon matin"
 
 	//mygreetting := make(map[string]string) { - same as above composite literal
-	// "Claud": "Goten Morgen"
-	// "Mathieu": "Bon Matin"
+	// "Claud": "Goten Morgen",
+	// "Mathieu": "Bon Matin",
 	// }
 
-	// adding in a composite literal above
+	// adding in an entry in a composite literal
 	// mygreetting["Yoshi"] = "Kaneecheewa"
+
 	fmt.Println(mygreetting)
 	// prints entire map
 	fmt.Println(mygreetting == nil)

@@ -23,3 +23,5 @@ func main() {
 	}
 	fmt.Println(mygreeting)
 }
+
+// purpose of comma ok idiom - is the value missing or is it there but it is at zero?

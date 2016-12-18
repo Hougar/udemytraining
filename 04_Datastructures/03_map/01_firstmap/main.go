@@ -7,6 +7,7 @@ func main() {
 	// declare & initializing the map m
 	// declare the key - the key is of type string
 	// int is the element type of the map i..e the value
+	// slices index access with by int i.e. position maps index access by anything
 	m["k1"] = 7
 	m["k2"] = 13
 	// index access the map by using strings k1 & k2

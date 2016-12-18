@@ -1,0 +1,73 @@
+INTERFACES
+
+Polymorphism - the ability to write code which can take on different behaviour through the implementation of types. Once a type implements an interface, an entire world of functionality can be opened up to the values of that type.
+
+Interfaces are a type which declare a behaviour. This behaviour is NEVER implemented by the interface type directly, but instead by user defined types via methods. When a user defined type implements the set of methods declared by an interface type, values of the user defined type can be assigned to the values of the interface type. This assignment stores the value of the user defined type into the interface value.
+
+If a method call is made against an interface value, the equivalent method for the stored user-defined value is executed. Since any user defined type can implement any interface, method calls against an interface value are polymorphic in nature. The user-defined type in this relationship is often called a concrete type, since interface values have no concrete behaviour with out implementation of the stored user defined values.
+
+
+Interfaces - in GO are satified IMPLICItLY - UNIQUE to GO
+CONCRETE TYPE - has a method associated with it
+
+COMMON INTERFACES
+From IO pacakge:
+  READER INTERFACE
+  type Reader interface{
+  Read(p []byte) (n int, err error) - THE METHOD
+  }
+  //function reade takes the parameters p & []byte & retuens - n int, err error
+  // Anything that has the method above implicity implements the reader interface
+
+  WRITER INTERFACE
+  type Write interface {
+  Write(p []byte) (n int, err error) - MEthOD
+  }
+  // Anything with the method implements the Writer interface
+
+NET/HTTP package
+  HANDLER INTERFACE
+  type Handler interface {
+  ServeHTTP(ResponseWriter, *Request)
+  }
+
+SORT package
+ INTERFACE INTEFACE
+ type Interface interface{
+ Len() int - METHOD 1
+  // the # of elements in a collection
+ Less(i, j int) bool - METHOD 2
+  // the element with index i  sort before elements with index j
+ Swap(i, j int) - METHOD 3
+  // swap the elements of index j & i
+ }
+
+METHOD SETS:
+Values          Methods Receivers
+----------------------------------
+T               (t T)
+*T              (t T ) AND (t *T)
+
+
+Methods        Receiver Values
+----------------------------------
+(t T)           T AND *T
+(t *T)          *T
+
+Receivers       Values
+----------------------------------
+(t T)  VALUES         T AND *T
+(t *T) POINTER        *T
+
+CONVERSION VS ASSERTION
+
+CONVERSION
+  Float to int, int to float
+  basic type to basic type
+    Widening
+      int to float
+    Narrowing
+     f  loat to int
+
+ASSERTION
+  Only used for interaces
