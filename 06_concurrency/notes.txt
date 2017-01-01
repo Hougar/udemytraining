@@ -1,0 +1,11 @@
+Do concurrency with go -routines
+
+Concurrency = the composition of indepently executing processes
+  DEALING with lots of things at once
+  Can concurrently speak AND drink coffee - speak, drink, drink, speak speak
+  Continously switching on processes
+
+Parallelism = the simultaneous execution of (possibly related) computations \
+  DOING lots of things at once.
+  CANNOT speak AND drink coffee in parallel - mut do one or the other at any ONE specific moment
+  Working simultaneously on all processes - i.e. mutiple cores 

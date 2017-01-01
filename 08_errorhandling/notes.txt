@@ -1,0 +1,19 @@
+Go does not have any exceptions why?
+  Try, catch, block in other program languages clunky - reduces readability
+  Go has panic & recover instead!
+  Go's approach to concurrency - Communicating Sequential Processes
+  Reduce the "scope" of errors - report your errors as close to as they occur
+
+Lint :
+  Unix utility that flags likely bugs
+  Prints out style mistakes - used internally in google
+
+./... -> This current directory and all the current files recursively do it
+
+ALWAYS - in production code have error checking
+
+
+Use func init - runs before func main
+
+Error values are not special - they are just like any other value - have the entire language at your disposal
+  What is a value ? - i..e x = 3, value = 3 & type = int, values of TYPE error 
